@@ -4,6 +4,7 @@ description: "Personal website with blog and resume"
 url: "https://vikasfugoki123.github.io"
 
 # Theme settings
+theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes"
 
 # Author info
