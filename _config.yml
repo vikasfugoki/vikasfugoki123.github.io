@@ -1,0 +1,26 @@
+title: "Vikas Chaudhary"
+name: "Vikas Chaudhary"
+description: "Personal website with blog and resume"
+url: "https://<your-username>.github.io"
+
+# Theme settings
+remote_theme: "mmistakes/minimal-mistakes"
+
+# Author info
+author:
+  name   : "Vikas Chaudhary"
+  avatar : "/assets/images/profile.jpg"
+  bio    : "Engineer | Blogger | Lifelong Learner"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/<your-username>"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/<your-linkedin>"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
