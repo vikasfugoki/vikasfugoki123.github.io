@@ -1,23 +1,27 @@
-# _config.yml for vikasfugoki123.github.io repository
+# _config.yml for Project Page Setup
+# Repository: vikasfugoki123.github.io
+# Site URL: https://vikasfugoki.github.io/vikasfugoki123.github.io
 title: Vikas Fugoki
 description: Developer & Tech Enthusiast
-baseurl: "/vikasfugoki123.github.io"  # Note the baseurl for project pages
+
+# IMPORTANT: For project pages, baseurl must match repository name
+baseurl: "/vikasfugoki123.github.io"
 url: "https://vikasfugoki.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
 
 # Author information
 author:
   name: Vikas Fugoki
   email: your.email@example.com
   github: vikasfugoki
-  linkedin: your-linkedin-profile
-
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
 
 # Navigation
 header_pages:
@@ -39,11 +43,6 @@ defaults:
     values:
       layout: "post"
       author: "Vikas Fugoki"
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
 
 # Exclude from processing
 exclude:
@@ -51,9 +50,3 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor/
-
-# Social media and contact
-social:
-  github: vikasfugoki
-  email: your.email@example.com
-  linkedin: your-linkedin-profile
