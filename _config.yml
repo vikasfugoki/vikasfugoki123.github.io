@@ -1,27 +1,32 @@
-title: "Vikas Chaudhary"
-name: "Vikas Chaudhary"
-description: "Personal website with blog and resume"
-url: "https://vikasfugoki123.github.io"
+title: Vikas Chaudhary
+description: Developer & Writer
+baseurl: ""
+url: "https://yourusername.github.io"
 
-# Theme settings
-theme: minimal-mistakes-jekyll
-remote_theme: "mmistakes/minimal-mistakes"
-
-# Author info
-author:
-  name   : "Vikas Chaudhary"
-  avatar : "/assets/images/profile.jpg"
-  bio    : "Engineer | Blogger | Lifelong Learner"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/<your-username>"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://linkedin.com/in/<your-linkedin>"
-
-# Plugins
+# Build settings
+markdown: kramdown
+theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-include-cache
+  - jekyll-sitemap
+
+# Navigation
+header_pages:
+  - index.md
+  - resume.md
+  - blog.md
+
+# Collections for blog posts
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Your Name"
